@@ -108,18 +108,62 @@ body {
     height: 100%;
 }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  align-items: center;
-  display: flex;
-  font-weight: 700;
-  justify-content: space-between;
+.flex-container {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
-.div-1, .div-2, .div-3 {
+.flex-items {
+    align-items: center;
+    display: flex;
+    font-size: 1.6em;
+    justify-content: center;
+    line-height: 1.5em;
+    width: 30%;
+    height: 200px;
+}
+
+header {
+    align-items: center;
+    color: #9b9b9b;
+    display: flex;
+    font-family: 'Domine', serif;
+    font-size: 4em;
+    justify-content: flex-start;
+}
+
+header span {
+    color: #C4421a;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: .06em;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    font-size: 1.5em;
+    height: auto;
+    justify-content: flex-start;
+}
+
+main p span {
+    font-family: 'Domine', serif;
+    font-weight: bold;
+}
+
+/*.wrapper {
+    align-items: center;
+    display: flex;
+    font-weight: 700;
+    justify-content: space-between;
+}*/
+
+#div-1, #div-2, #div-3 {
     /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
     align-items: center;
-    color: #fff;
     display: flex;
     font-size: 1.3em;
     height: auto;
@@ -128,17 +172,23 @@ body {
     width: 30%;
 }
 
-.div-1 p span, .div-2 p span, .div-3 p span {
+#div-1 p span, #div-2 p span, #div-3 p span {
     font-family: 'Permanent Marker', cursive;
     letter-spacing: .06em;
     text-transform: uppercase;
 }
 
-.div-1, .div-2 {
+#div-1, #div-2 {
     border-right: 1px solid grey;
-    padding-right: 30px;
+    padding-right: 20px;
 }
 
+footer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
 
 
 /* ==========================================================================
